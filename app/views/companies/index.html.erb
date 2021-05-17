@@ -52,6 +52,8 @@
     }
 
     function loadXLS() {
-        inputFile.click()
+        let answer = confirm("Загрузка файла очистит предыдущие записи, Вы уверены?");
+        if (answer)
+          inputFile.click()
     }
 </script>
